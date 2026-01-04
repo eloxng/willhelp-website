@@ -1,0 +1,8 @@
+# ignore these files on push
+node_modules/
+src/
+package.json
+package-lock.json
+tailwind.config.js
+
+scripts/
