@@ -42,3 +42,36 @@
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     transform: translateY(-3px); /* slightly lift on hover */
 }
+
+/* Form field styling */
+.form-fields {
+    padding: 0.5rem 1rem;               /* px-4 py-2 */
+    border: 1px solid #d1d5db;        /* Tailwind's border-gray-300 */
+    border-radius: 0.5rem;              /* rounded */
+    width: 100%;                        /* w-full */
+    outline: none;                      /* focus:outline-none */
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.form-fields:focus {
+    border-color: #007bff;                         /* focus:ring-blue-500 */
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3); /* Tailwind ring effect */
+}
+
+/* Buttons */
+.custom-button {
+    padding: 0.5rem 1rem;                        /* nice button padding */
+    border-radius: 5px;                          /* rounded corners */
+    border: 1px solid transparent;               /* optional border */
+    background-color: #ffffff;                 /* default button color */
+    color: #333;                               /* default text color */
+    cursor: pointer;
+    font-weight: bold;                          /* make button text stand out */
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.custom-button:hover {
+    background-color: #007bff;                 /* blue highlight */
+    color: #fff;                               /* white text */
+    transform: translateY(-2px);                 /* subtle lift effect */
+}

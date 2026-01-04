@@ -82,6 +82,47 @@ function HomePage() {
         <a href="tel:+17073349113" class="link-hover">Phone: (707) 416-1075</a>
       </div>
     </section>
+
+    <!-- SUBMIT A REQUEST SECTION -->
+    <section id="submitarequest" class="py-20 bg-base-200 text-center scroll-mt-20">
+      <h2 class="text-3xl font-bold mb-6">Submit a Request</h2>
+    
+      <form id="requestForm" class="max-w-xl mx-auto grid gap-6 text-left">
+        <!-- First Name -->
+        <input type="text" name="firstName" placeholder="First Name" class="form-fields" required>
+    
+        <!-- Last Name -->
+        <input type="text" name="lastName" placeholder="Last Name" class="form-fields" required>
+    
+        <!-- Email -->
+        <input type="email" name="email" placeholder="Email" class="form-fields">
+    
+        <!-- Phone -->
+        <input type="tel" name="phone" placeholder="Phone" class="form-fields">
+    
+        <p class="text-sm text-gray-500">*Please fill in either email or phone</p>
+    
+        <!-- Address -->
+        <input type="text" name="address" placeholder="Address" class="form-fields">
+    
+        <!-- Service type dropdown -->
+        <select name="serviceType" class="form-fields" required>
+          <option value="" disabled selected>Select a service</option>
+          <option value="consultation">Consultation</option>
+          <option value="installation">Installation</option>
+          <option value="maintenance">Maintenance</option>
+          <option value="other">Other</option>
+        </select>
+    
+        <!-- Description -->
+        <textarea name="description" maxlength="500" placeholder="Description (max 500 characters)" rows="5" class="form-fields"></textarea>
+    
+        <!-- Submit button -->
+        <button type="submit" class="custom-button">
+          Submit Request
+        </button>
+      </form>
+    </section>
     `;
   }
   

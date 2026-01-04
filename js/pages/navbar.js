@@ -5,7 +5,8 @@ function Navbar() {
         { name: "About", href: "index.html#about" },
         { name: "Services", href: "index.html#services" },
         { name: "Portfolio", href: "index.html#portfolio" },
-        { name: "Contact", href: "index.html#contact" }
+        { name: "Contact", href: "index.html#contact" },
+        { name: "Submit a Request", href: "index.html#submitarequest"}
     ];
 
     const desktopLinks = menuItems.map(item => 
