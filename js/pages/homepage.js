@@ -2,7 +2,7 @@
 function HomePage() {
     return `
     <!-- HERO SECTION -->
-    <section id="hero" class="flex flex-col items-center justify-center text-center py-32 bg-base-200">
+    <section id="hero" class="flex flex-col items-center justify-center text-center py-20 bg-base-200">
       <img src="assets/logo.png" alt="Company Icon" class="w-20 h-20 mb-4">
       <h1 class="text-4xl md:text-5xl font-extrabold mb-4">WILL HELP</h1>
       <p class="text-lg md:text-xl max-w-xl">
@@ -77,8 +77,10 @@ function HomePage() {
     <!-- CONTACT SECTION -->
     <section id="contact" class="py-20 bg-base-200 text-center scroll-mt-20">
       <h2 class="text-3xl font-bold mb-6">Contact Information</h2>
-      <a href="mailto:tektwnmckie@gmail.com" class="link-hover">Email: tektwnmckie@gmail.com</a>
-      <a href="tel:+17073349113" class="link-hover">Phone: (707) 416-1075</a>
+      <div class="grid grid-rows gap-4 mt-4 justify-center">
+        <a href="mailto:tektwnmckie@gmail.com" class="link-hover">Email: tektwnmckie@gmail.com</a>
+        <a href="tel:+17073349113" class="link-hover">Phone: (707) 416-1075</a>
+      </div>
     </section>
     `;
   }
