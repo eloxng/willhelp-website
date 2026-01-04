@@ -1,0 +1,85 @@
+// This is your "page content object"
+function HomePage() {
+    return `
+    <!-- HERO SECTION -->
+    <section id="hero" class="flex flex-col items-center justify-center text-center py-32 bg-base-200">
+      <img src="assets/logo.png" alt="Company Icon" class="w-20 h-20 mb-4">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">WILL HELP</h1>
+      <p class="text-lg md:text-xl max-w-xl">
+        Will Help LLC provides reliable landscaping and property maintenance services you can count on. From yard cleanups and landscape care to snow and junk removal, we’re here to help keep your property clean, safe, and looking its best year-round.
+      </p>
+      <a href="#about" class="btn btn-primary mt-8">Learn More</a>
+    </section>
+  
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 container mx-auto text-center scroll-mt-20">
+      <h2 class="text-3xl font-bold mb-6">About Us</h2>
+      <div class="max-w-2xl mx-auto text-lg space-y-6">
+        <p>Will Help LLC is a locally owned, owner-operated landscaping and property maintenance business focused on keeping outdoor spaces clean, safe, and well maintained...</p>
+        <p>Services include landscaping and mulching, general landscape repairs, yard clean-ups, residential street cleaning, deep cleaning, snow removal, and junk removal...</p>
+        <p>Being owner-operated means you work directly with the person doing the work from start to finish...</p>
+        <p>The goal is simple: to help homeowners and residents maintain clean, functional, and attractive properties throughout the year.</p>
+      </div>
+    </section>
+  
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-20 bg-base-200 scroll-mt-20">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-10">Services</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="card shadow-lg p-6">
+            <h3 class="font-semibold text-xl mb-2">Landscaping & Mulching</h3>
+            <p>Professional landscaping services including mulching, bed maintenance, and general yard improvements to enhance your property.</p>
+          </div>
+          <div class="card shadow-lg p-6">
+            <h3 class="font-semibold text-xl mb-2">Yard Clean-Ups & Repairs</h3>
+            <p>Seasonal yard clean-ups, debris removal, and general landscape repairs to restore and maintain outdoor spaces.</p>
+          </div>
+          <div class="card shadow-lg p-6">
+            <h3 class="font-semibold text-xl mb-2">Residential Street & Deep Cleaning</h3>
+            <p>Street cleaning and deep outdoor cleaning services to remove dirt, leaves, and buildup for a safer neighborhood.</p>
+          </div>
+          <div class="card shadow-lg p-6">
+            <h3 class="font-semibold text-xl mb-2">Snow Removal</h3>
+            <p>Reliable snow removal for driveways, sidewalks, and walkways to keep your property accessible during winter.</p>
+          </div>
+          <div class="card shadow-lg p-6">
+            <h3 class="font-semibold text-xl mb-2">Junk Removal</h3>
+            <p>Fast and responsible junk removal services to clear unwanted items and yard waste with minimal hassle.</p>
+          </div>
+          <div class="card shadow-lg p-6">
+            <h3 class="font-semibold text-xl mb-2">General Property Maintenance</h3>
+            <p>Ongoing maintenance services designed to keep your property clean, functional, and well cared for all year.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- SERVICE AREA SECTION -->
+    <section id="service-area" class="py-20 container mx-auto text-center scroll-mt-20">
+      <h2 class="text-3xl font-bold mb-6">Service Area</h2>
+      <p class="max-w-2xl mx-auto text-lg mb-6">
+        Will Help LLC proudly serves Portola, California, Plumas County, and surrounding communities.
+      </p>
+      <a href="#contact" class="btn btn-outline btn-primary mt-4">Check Availability</a>
+    </section>
+  
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio" class="py-20 container mx-auto text-center scroll-mt-20">
+      <h2 class="text-3xl font-bold mb-10">Portfolio</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="card shadow-lg h-64 flex items-center justify-center">Project 1</div>
+        <div class="card shadow-lg h-64 flex items-center justify-center">Project 2</div>
+        <div class="card shadow-lg h-64 flex items-center justify-center">Project 3</div>
+      </div>
+    </section>
+  
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 bg-base-200 text-center scroll-mt-20">
+      <h2 class="text-3xl font-bold mb-6">Contact Information</h2>
+      <p class="mb-6">Email: tektwnmckie@gmail.com | Phone: (707) 416-1075</p>
+      <a href="mailto:tektwnmckie@gmail.com" class="btn btn-primary">Get in Touch</a>
+    </section>
+    `;
+  }
+  
