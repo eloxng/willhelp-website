@@ -8,19 +8,35 @@
 </head>
 <body class="bg-base-100 text-base-content font-sans">
 
-  <!-- Navbar will be injected here -->
-  <div id="navbar"></div>
-
+  <!-- 
+    Navbar on the top of the page and sticky
+    so that it follows the user when the user
+    scrolls down the page.
+  -->
+  <div id="navbar" class="sticky top-0"></div>
+  
   <!-- Home page will be injected here -->
-  <div id="home-page" class="pt-20"></div>
+  <div id="home-page"></div>
+
 
   <!-- Scripts -->
   <script src="js/pages/navbar.js"></script>
   <script src="js/pages/homepage.js"></script>
   <script>
-    // Render navbar and content
+    // Add pages to render here
     document.getElementById('navbar').innerHTML = Navbar();
     document.getElementById('home-page').innerHTML = HomePage();
+
+    // Add page functionnality here
+    /* ================== Toggle mobile menu bar ================== */
+    // DESCR: Toggle the menu bar in mobile view with the hamburger icon
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu-toggle');
+
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+    /* ============================================================ */
   </script>
 </body>
 </html>
