@@ -1,0 +1,44 @@
+/* Add custom styling that may be used in more than one window here */
+
+/* Navbar on the top of the page and sticky
+   so that it follows the user when the user
+   scrolls down the page. */
+.navbar {
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #ffffff;
+    --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+
+/* All buttons and clickable links, when hovered over, 
+   will turn text white and will see a blue shadow behind
+   the button. */
+.link-hover {
+    padding-left: 0.5rem;                           /* px-2 */
+    padding-right: 0.5rem;                          /* px-2 */
+    padding-top: 0.25rem;                           /* py-1 */
+    padding-bottom: 0.25rem;                        /* py-1 */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* smooth hover effect */
+}
+.link-hover:hover {
+    background-color: #007bff;  /* blue highlight on hover */
+    color: #fff;                /* text turns white */
+}
+
+/* Custom card with large shadow,
+   card lifts slightly on hover. */
+.card-shadow-lg {
+    background-color: #fff;                                 /* white card background */
+    border-radius: 10px;                                      /* rounded corners */
+    padding: 1rem;                                            /* inner spacing */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);             /* large shadow */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;    /* smooth hover effect */
+}
+.card-shadow-lg:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px); /* slightly lift on hover */
+}

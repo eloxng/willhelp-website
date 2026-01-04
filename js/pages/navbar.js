@@ -9,15 +9,14 @@ function Navbar() {
     ];
 
     const desktopLinks = menuItems.map(item => 
-        `<a href="${item.href}" class="px-2 py-1 rounded hover:text-primary hover:bg-primary/10 transition">${item.name}</a>`
+        `<a href="${item.href}" class="link-hover">${item.name}</a>`
       ).join('');
     
     const mobileLinks = menuItems.map(item =>
-    `<a href="${item.href}" class="btn btn-ghost w-full text-center">${item.name}</a>`
+    `<a href="${item.href}" class="link-hover">${item.name}</a>`
     ).join('');
 
     return `
-    <header class="w-full bg-white-600 shadow-md">
       <div class="flex justify-between items-center p-4">
         <!-- Logo + Name -->
         <div class="flex items-center space-x-3">
@@ -32,7 +31,7 @@ function Navbar() {
     
         <!-- Hamburger menu icon  -->
         <div class="md:hidden">
-          <button id="menu-btn" class="btn btn-square btn-ghost">
+          <button id="menu-btn" class="link-hover">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" 
                 viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
@@ -43,12 +42,11 @@ function Navbar() {
       </div>
     
       <!-- Mobile Menu -->
-      <div id="menu-toggle" class="md:hidden bg-base-200">
+      <div id="menu-toggle" class="md:hidden bg-base-200 hover:bg-blue-500 hidden">
         <div class="flex flex-col items-center p-4 space-y-3">
           ${mobileLinks}
         </div>
       </div>
-    </header>
     `;
   }
   
