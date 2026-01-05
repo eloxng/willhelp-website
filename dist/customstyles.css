@@ -28,7 +28,7 @@
         box-shadow 0.35s ease; 
 }
 .link-hover:hover {
-    background-color: #007bff;  /* blue highlight on hover */
+    background-color: #3ab5d4;  /* blue highlight on hover */
     color: #ffffff;                /* text turns white */
     transform: translateY(-2px);                 /* subtle lift effect */
 }
@@ -57,7 +57,7 @@
 }
 
 .form-fields:focus {
-    border-color: #007bff;                         /* focus:ring-blue-500 */
+    border-color: #3ab5d4;                         /* focus:ring-blue-500 */
     box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3); /* Tailwind ring effect */
 }
 
@@ -66,7 +66,7 @@
     padding: 0.5rem 1rem;                        /* nice button padding */
     border-radius: 5px;                          /* rounded corners */
     border: 1px solid transparent;               /* optional border */
-    background-color: #007bff;                 /* default button color */
+    background-color: #3ab5d4;                 /* default button color */
     color: #ffffff;                            /* default text color */
     cursor: pointer;
     font-weight: bold;                          /* make button text stand out */
@@ -74,7 +74,22 @@
 }
 
 .custom-button:hover {
-    background-color: #007bff;                 /* blue highlight */
+    background-color: #3ab5d4;                 /* blue highlight */
     color: #fff;                               /* white text */
     transform: translateY(-2px);                 /* subtle lift effect */
+}
+
+/* Website color schemes */
+.website-background-color {
+    background-color: #f1f1f1;
+}
+
+.website-header-text {
+    color: #f27420;
+    font-weight: 800;
+}
+
+.website-description-text {
+    color: #3ab5d4;
+    font-weight: 700; 
 }

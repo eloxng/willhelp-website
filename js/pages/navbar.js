@@ -10,17 +10,17 @@ function Navbar() {
     ];
 
     const desktopLinks = menuItems.map(item => 
-        `<a href="${item.href}" class="link-hover">${item.name}</a>`
+        `<a href="${item.href}" class="website-header-text link-hover font-semibold">${item.name}</a>`
       ).join('');
     
     const mobileLinks = menuItems.map(item =>
-    `<a href="${item.href}" class="link-hover">${item.name}</a>`
+    `<a href="${item.href}" class="website-header-text link-hover font-semibold">${item.name}</a>`
     ).join('');
 
     return `
       <div class="flex justify-between items-center p-4">
         <!-- Logo + Name -->
-        <div class="flex items-center space-x-3">
+        <div class="website-header-text flex items-center space-x-3">
           <img src="assets/logo.png" alt="Company Icon" class="w-10 h-10">
           <h1 class="text-xl font-bold">WILL HELP</h1>
         </div>
