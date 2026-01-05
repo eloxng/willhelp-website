@@ -116,13 +116,13 @@ function HomePage() {
         </div>
     
         <!-- Address -->
-        <fieldset class="border border-0 p-4">
-          <legend class="text-sm">** Address is optional **</legend>
-          <input type="text" name="address_line_1" placeholder="Address Line 1 (optional)" class="form-fields mb-3">
+        <fieldset class="w-full">
+          <legend class="text-sm">Address (optional)</legend>
+          <input type="text" name="address_line_1" placeholder="Address Line 1" class="form-fields mb-3">
           <input type="text" name="address_line_2" placeholder="Address Line 2 (optional)" class="form-fields">
-          <input type="text" name="city" placeholder="City" class="form-fields">
-          <input type="text" name="state" placeholder="State" class="form-fields">
-          <input type="text" name="zip" placeholder="ZIP Code" class="form-fields">
+          <input type="text" name="city" placeholder="City" class="form-fields col-span-3 w-full">
+          <input type="text" name="state" placeholder="State" class="form-fields col-span-2 w-full">
+          <input type="text" name="zip" placeholder="ZIP Code" class="form-fields col-span-1 w-full">
         </fieldset>
 
         <!-- Service type dropdown -->
