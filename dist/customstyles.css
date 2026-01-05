@@ -26,7 +26,8 @@
 }
 .link-hover:hover {
     background-color: #007bff;  /* blue highlight on hover */
-    color: #fff;                /* text turns white */
+    color: #ffffff;                /* text turns white */
+    transform: translateY(-2px);                 /* subtle lift effect */
 }
 
 /* Custom card with large shadow,
@@ -62,8 +63,8 @@
     padding: 0.5rem 1rem;                        /* nice button padding */
     border-radius: 5px;                          /* rounded corners */
     border: 1px solid transparent;               /* optional border */
-    background-color: #ffffff;                 /* default button color */
-    color: #333;                               /* default text color */
+    background-color: #007bff;                 /* default button color */
+    color: #ffffff;                            /* default text color */
     cursor: pointer;
     font-weight: bold;                          /* make button text stand out */
     transition: background-color 0.3s, color 0.3s, transform 0.2s;

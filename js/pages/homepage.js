@@ -15,9 +15,12 @@ function HomePage() {
     <section id="about" class="py-20 container mx-auto text-center scroll-mt-20">
       <h2 class="text-3xl font-bold mb-6">About Us</h2>
       <div class="max-w-2xl mx-auto text-lg space-y-6">
-        <p>Will Help LLC is a locally owned, owner-operated landscaping and property maintenance business focused on keeping outdoor spaces clean, safe, and well maintained...</p>
-        <p>Services include landscaping and mulching, general landscape repairs, yard clean-ups, residential street cleaning, deep cleaning, snow removal, and junk removal...</p>
-        <p>Being owner-operated means you work directly with the person doing the work from start to finish...</p>
+        <p>Will Help LLC is a locally owned, owner-operated landscaping and property maintenance business focused on keeping outdoor spaces clean, safe, and well maintained.</p>
+        &nbsp;
+        <p>Services include landscaping and mulching, general landscape repairs, yard clean-ups, residential street cleaning, deep cleaning, snow removal, and junk removal.</p>
+        &nbsp;
+        <p>Being owner-operated means you work directly with the person doing the work from start to finish.</p>
+        &nbsp;
         <p>The goal is simple: to help homeowners and residents maintain clean, functional, and attractive properties throughout the year.</p>
       </div>
     </section>
@@ -77,6 +80,11 @@ function HomePage() {
     <!-- CONTACT SECTION -->
     <section id="contact" class="py-20 bg-base-200 text-center scroll-mt-20">
       <h2 class="text-3xl font-bold mb-6">Contact Information</h2>
+      
+      <p class="max-w-xl mx-auto mb-6 text-gray-600">
+        Have questions or need to get in touch? Reach out using the contact details below and we’ll respond as soon as possible.
+      </p>
+
       <div class="grid grid-rows gap-4 mt-4 justify-center">
         <a href="mailto:tektwnmckie@gmail.com" class="link-hover">Email: tektwnmckie@gmail.com</a>
         <a href="tel:+17073349113" class="link-hover">Phone: (707) 416-1075</a>
@@ -88,6 +96,11 @@ function HomePage() {
       <h2 class="text-3xl font-bold mb-6">Submit a Request</h2>
     
       <form id="requestForm" class="max-w-xl mx-auto grid gap-6 text-left">
+        <p class="text-sm">
+          Use the form below to request a service, consultation, or additional information. 
+          Please provide as much detail as possible so we can better assist you.
+        </p>
+
         <!-- First Name -->
         <input type="text" name="firstName" placeholder="First Name" class="form-fields" required>
     
@@ -95,16 +108,23 @@ function HomePage() {
         <input type="text" name="lastName" placeholder="Last Name" class="form-fields" required>
     
         <!-- Email -->
-        <input type="email" name="email" placeholder="Email" class="form-fields">
-    
-        <!-- Phone -->
-        <input type="tel" name="phone" placeholder="Phone" class="form-fields">
-    
-        <p class="text-sm text-gray-500">*Please fill in either email or phone</p>
+        <div>
+          <input type="email" name="email" placeholder="Email" class="form-fields">
+          <p> OR </p>
+          <!-- Phone -->
+          <input type="tel" name="phone" placeholder="Phone Number" class="form-fields">
+        </div>
     
         <!-- Address -->
-        <input type="text" name="address" placeholder="Address" class="form-fields">
-    
+        <fieldset class="border border-0 p-4">
+          <legend class="text-sm">** Address is optional **</legend>
+          <input type="text" name="address_line_1" placeholder="Address Line 1 (optional)" class="form-fields mb-3">
+          <input type="text" name="address_line_2" placeholder="Address Line 2 (optional)" class="form-fields">
+          <input type="text" name="city" placeholder="City" class="form-fields">
+          <input type="text" name="state" placeholder="State" class="form-fields">
+          <input type="text" name="zip" placeholder="ZIP Code" class="form-fields">
+        </fieldset>
+
         <!-- Service type dropdown -->
         <select name="serviceType" class="form-fields" required>
           <option value="" disabled selected>Select a service</option>
