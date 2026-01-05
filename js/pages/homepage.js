@@ -62,7 +62,7 @@ function HomePage() {
     <section id="service-area" class="py-20 container mx-auto text-center scroll-mt-20">
       <h2 class="website-header-text text-3xl font-bold mb-6">Service Area</h2>
       <p class="website-description-text max-w-2xl mx-auto text-lg mb-6">
-        Will Help LLC proudly serves Portola, California, Plumas County, and surrounding communities.
+        Based in Portola, California, Will Help LLC proudly serves clients across all of Plumas County.
       </p>
       <a href="#contact" class="website-description-text link-hover mt-4">Check Availability</a>
     </section>
