@@ -43,7 +43,7 @@ function Navbar() {
       </div>
     
       <!-- Mobile Menu -->
-      <div id="menu-toggle" class="md:hidden bg-base-200 hover:bg-blue-500 hidden">
+      <div id="mobile-menu-toggle" class="md:hidden bg-base-200 hover:bg-blue-500 hidden">
         <div class="flex flex-col items-center p-4 space-y-3">
           ${mobileLinks}
         </div>

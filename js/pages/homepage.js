@@ -98,7 +98,7 @@ function HomePage() {
       <form id="requestForm" class="max-w-xl mx-auto grid gap-6 text-left">
         <p class="text-sm">
           Use the form below to request a service, consultation, or additional information. 
-          Please provide as much detail as possible so we can better assist you.
+          Please provide as much detail as possible to better assist you.
         </p>
 
         <!-- First Name -->
