@@ -6,3 +6,6 @@ package-lock.json
 tailwind.config.js
 
 scripts/
+
+# environment variables
+env.js

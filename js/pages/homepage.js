@@ -95,50 +95,50 @@ function HomePage() {
     <section id="submitarequest" class="py-20 bg-base-200 text-center scroll-mt-20">
       <h2 class="website-header-text text-3xl font-bold mb-6">Submit a Request</h2>
     
-      <form id="requestForm" class="max-w-xl mx-auto grid gap-6 text-left">
+      <form id="submit-a-request-form" class="max-w-xl mx-auto grid gap-6 text-left">
         <p class="website-description-text text-sm">
           Use the form below to request a service, consultation, or additional information. 
           Please provide as much detail as possible to better assist you.
         </p>
 
         <!-- First Name -->
-        <input type="text" name="firstName" placeholder="First Name" class="form-fields" required>
+        <input type="text" name="first_name" placeholder="First Name" class="form-fields" required>
     
         <!-- Last Name -->
-        <input type="text" name="lastName" placeholder="Last Name" class="form-fields" required>
+        <input type="text" name="last_name" placeholder="Last Name" class="form-fields" required>
     
         <!-- Email -->
         <div>
           <input type="email" name="email" placeholder="Email" class="form-fields">
           <p class="website-description-text"> OR </p>
           <!-- Phone -->
-          <input type="tel" name="phone" placeholder="Phone Number" class="form-fields">
+          <input type="tel" name="phone_number" placeholder="Phone Number" class="form-fields">
         </div>
     
         <!-- Address -->
         <fieldset class="w-full">
-          <legend class="website-description-text text-sm">Address (optional)</legend>
-          <input type="text" name="address_line_1" placeholder="Address Line 1" class="form-fields mb-3">
+          <legend class="website-description-text text-sm">Address</legend>
+          <input type="text" name="address_line_1" placeholder="Address Line 1" class="form-fields mb-3" required>
           <input type="text" name="address_line_2" placeholder="Address Line 2 (optional)" class="form-fields">
-          <input type="text" name="city" placeholder="City" class="form-fields col-span-3 w-full">
-          <input type="text" name="state" placeholder="State" class="form-fields col-span-2 w-full">
-          <input type="text" name="zip" placeholder="ZIP Code" class="form-fields col-span-1 w-full">
+          <input type="text" name="city" placeholder="City" class="form-fields col-span-3 w-full" required>
+          <input type="text" name="state" placeholder="State" class="form-fields col-span-2 w-full" required>
+          <input type="text" name="zip_code" maxlength=5 placeholder="ZIP Code" class="form-fields col-span-1 w-full" required>
         </fieldset>
 
         <!-- Service type dropdown -->
-        <select name="serviceType" class="website-description-text form-fields" required>
+        <select name="request_type_code" class="website-description-text form-fields" required>
           <option value="" disabled selected>Select a service</option>
-          <option value="consultation">Consultation</option>
+          <option value="landscaping and mulching">landscaping and mulching</option>
           <option value="installation">Installation</option>
           <option value="maintenance">Maintenance</option>
           <option value="other">Other</option>
         </select>
     
         <!-- Description -->
-        <textarea name="description" maxlength="500" placeholder="Description (max 500 characters)" rows="5" class="form-fields"></textarea>
+        <textarea name="description" maxlength="500" placeholder="Description (max 500 characters)" rows="5" class="form-fields" required></textarea>
     
         <!-- Submit button -->
-        <button type="submit" class="custom-button">
+        <button id="submit-a-request-button" type="submit"  class="custom-button">
           Submit Request
         </button>
       </form>
